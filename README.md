@@ -67,3 +67,12 @@ The architecture of SSD is built based on the VGG-16 architecture. But here is a
 In the above picture,  we have an image with few horses. We have divided our input image into the set of grids. Then we make couple of rectangles of different aspect ratio around those grids. Then we apply convolution in those boxes to find if there is an object or not in those grids. Here one of the black horse is closer to the camera in the image. So the rectangle we draw is unable to identify if that is horse or not because the rectangle does not have any features that are identifying to horses.
 
 </p5>
+
+![5](https://user-images.githubusercontent.com/30608533/50616727-c4549080-0efa-11e9-8798-3983dd1e750a.png)
+
+<p6>
+
+If we see the above architecture of SSD, we can see in each step after conv6 layer the size of images gets reduced substantially. Then every operation we discussed on making grids and finding objects on those grids applies in every single step of the convolution going from back to front of the network. The classifiers are applied in every single step to detect the objects too. So since the objects become smaller in each steps they gets easily identified.
+
+  
+</p6>

@@ -31,6 +31,8 @@ There the **conv4_3** is responsible to detect the **smallest objects** while th
 
 </p3>
 
+### SSD Network Architecture
+
 ![1](https://user-images.githubusercontent.com/30608533/50615335-2b6f4680-0ef5-11e9-966b-710526972251.jpg)
 
 
@@ -46,7 +48,8 @@ The architecture of SSD is built based on the VGG-16 architecture. But here is a
 
 </p4>
 
-
+### VGG-16 architecture
+![2](https://user-images.githubusercontent.com/30608533/50616043-f0224700-0ef7-11e9-944b-15f857bfb615.png)
 
 
 

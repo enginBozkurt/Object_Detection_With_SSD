@@ -52,4 +52,12 @@ The architecture of SSD is built based on the VGG-16 architecture. But here is a
 ![2](https://user-images.githubusercontent.com/30608533/50616043-f0224700-0ef7-11e9-944b-15f857bfb615.png)
 
 
+<h3>
+
+```diff
++ Dealing With Scale Problem
+```
+
+</h3>
+
 

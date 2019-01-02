@@ -60,4 +60,10 @@ The architecture of SSD is built based on the VGG-16 architecture. But here is a
 
 </h3>
 
+![4](https://user-images.githubusercontent.com/30608533/50616413-6b382d00-0ef9-11e9-9827-e9d884ccbaa9.png)
 
+<p5>
+  
+In the above picture,  we have an image with few horses. We have divided our input image into the set of grids. Then we make couple of rectangles of different aspect ratio around those grids. Then we apply convolution in those boxes to find if there is an object or not in those grids. Here one of the black horse is closer to the camera in the image. So the rectangle we draw is unable to identify if that is horse or not because the rectangle does not have any features that are identifying to horses.
+
+</p5>

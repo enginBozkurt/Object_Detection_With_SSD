@@ -34,10 +34,17 @@ There the **conv4_3** is responsible to detect the **smallest objects** while th
 ![1](https://user-images.githubusercontent.com/30608533/50615335-2b6f4680-0ef5-11e9-966b-710526972251.jpg)
 
 
+**Single Shot: Object localization and classification is done in single forward pass of network**
 
+**MultiBox: Technique for bounding box regression**
 
+**Detector: Classify the detected objects**
 
+<p4>
+  
+The architecture of SSD is built based on the VGG-16 architecture. But here is a little tweak on the VGG-16, we use the set of **auxiliary convolutional layers from Conv6 layer onwards instead of fully connected layers**. The reason of using VGG-16 as foundational network is its high quality image classification and transfer learning to improve results. Using the auxiliary convolutional layers we can **extract features at multiple scales and progressively decrease the size at each following layer**. I have discussed how this works in following section. You can see the following image for VGG-16 architecture. It contains fully connected layers.
 
+</p4>
 
 
 

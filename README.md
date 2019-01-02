@@ -76,3 +76,10 @@ If we see the above architecture of SSD, we can see in each step after conv6 lay
 
   
 </p6>
+
+
+<p7>
+  
+The SSD algorithm also knows how to go back from one convolution operation to another. It not only learns to go forward but backwards too. For e.g if it sees horse in conv4 then it can return to conv6 and the algorithm will draw the rectangle around the horse.
+
+</p7>

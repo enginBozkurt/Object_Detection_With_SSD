@@ -83,3 +83,16 @@ If we see the above architecture of SSD, we can see in each step after conv6 lay
 The SSD algorithm also knows how to go back from one convolution operation to another. It not only learns to go forward but backwards too. For e.g if it sees horse in conv4 then it can return to conv6 and the algorithm will draw the rectangle around the horse.
 
 </p7>
+
+<h3>
+
+```diff
++ Working Mechanism
+```
+
+</h3>
+
+<p8>
+  To train our algorithm, we need a training set that contains image with objects and those objects must have bounding boxes on them. Learning this way, the algorithms learn how to put rectangle on the object and where to put. We minimize the errors between inferred bounding boxes and ground truth to optimize our model to detect the object correctly. Unlike in CNN, we don’t only predict if there is an object in the image or not we also need to predict where in the image the object is. During training the algorithm learn to adjust the height and width of the rectangle in the object. 
+</p8>
+

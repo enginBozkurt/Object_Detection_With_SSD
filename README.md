@@ -197,3 +197,43 @@ SSD300 achieves **74.3% mAP at 59 FPS** while **SSD500 achieves 76.9% mAP at 22 
 
 ![47193724-2589b080-d35d-11e8-8753-e59ee9cb46cc](https://user-images.githubusercontent.com/30608533/50645737-51442c00-0f85-11e9-9984-ee4eafdca298.gif)
 
+<h3>
+
+```diff
++ Future Work
+```
+
+</h3>
+
+- This Single Shot Multibox Detection (SSD) framework can be used with Kalman filter 
+ for vehicle tracking and detection in autuonomus vehicles.
+
+- With the integration of a Text-to-Speech API, it can be used as a navigation helper for
+visually impaired people. With the help of the microcomputers(such as Raspberry Pi) 
+and game engines(such as Unity framework), the 3D sound can be simulated and 
+this audio signal can be transmitted to the user for informing the objects
+as well as their spatial locations.
+
+<h3>
+
+```diff
++ References
+```
+
+</h3>
+
+
+- SSD: Single Shot MultiBox Detector Research Paper
+ Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang Fu, Alexander C. Berg
+https://arxiv.org/abs/1512.02325
+
+- Original Implementation (CAFFE)
+https://github.com/weiliu89/caffe/tree/ssd
+
+- SSD(Single Shot Multi-Box Detection) for real time object detection
+https://medium.com/@rabinpoudyal1995/ssd-single-shot-multi-box-detection-for-real-time-object-detection-5f2a06e33a4a
+
+
+- Review: SSD Single Shot Detector (Object Detection)
+https://towardsdatascience.com/review-ssd-single-shot-detector-object-detection-851a94607d11
+

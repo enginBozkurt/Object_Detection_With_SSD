@@ -173,6 +173,8 @@ So we will be loading this file with Pytorch and Pytorch load function will open
 a tensor, a tensor that will contain **the weight of this already pre-trained neural network and then through 
 a mapping with a dictionary we will transfer these weights to the model we implement.**
 
+You can download the **SSD300 trained on VOC0712 (newest PyTorch weights) from  the following link:**
+https://s3.amazonaws.com/amdegroot-models/ssd300_mAP_77.43_v2.pth
 </p15>
 
 

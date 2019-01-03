@@ -177,5 +177,11 @@ You can download the **SSD300 trained on VOC0712 (newest PyTorch weights) from  
 https://s3.amazonaws.com/amdegroot-models/ssd300_mAP_77.43_v2.pth
 </p15>
 
+<p16>
+  
+SSD300 achieves 74.3% mAP at 59 FPS while SSD500 achieves 76.9% mAP at 22 FPS, which outperforms Faster R-CNN (73.2% mAP at 7 FPS) and YOLOv1 (63.4% mAP at 45 FPS).
+
+</p16>
+
 
 

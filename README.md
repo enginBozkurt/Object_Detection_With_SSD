@@ -145,4 +145,35 @@ turns out to be a much better choice in terms of lines of code.
 </p14>
 
 
+<h3>
+
+```diff
++ Some notes about the implementation and code
+```
+
+</h3>
+
+
+<p14>
+
+The first thing very important to understand is that exactly like before we are going to do a **frame by frame detection** 
+that is the detect function that  will **work on single images** it will not do the detection on the video directly 
+it will do the detection on **each single image of the video** and then using some tricks with actually imageio, 
+we will manage to **extract all the frames of the video** apply the detect function on the frames and 
+then reassemble the whole thing to make the video with the rectangles detecting the objects and humans.
+</p14>
+
+<p15>
+
+In this implementation, I used a **pre-trained SSD300 network for detection.**
+
+ssd300_mAP_77.43_v2.pth file is the file we will be loading to get the pre-trained SSD model and more
+precisely this is the file that contains the weight of the SSD neural network that was already pre-trained.
+So we will be loading this file with Pytorch and Pytorch load function will open
+a tensor, a tensor that will contain **the weight of this already pre-trained neural network and then through 
+a mapping with a dictionary we will transfer these weights to the model we implement.**
+
+</p15>
+
+
 

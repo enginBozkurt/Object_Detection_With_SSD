@@ -189,7 +189,11 @@ SSD300 achieves **74.3% mAP at 59 FPS** while **SSD500 achieves 76.9% mAP at 22 
 <h2>
 
 ```diff
-+ Demos and results in sample videos
++ Demo and result on the sample video
 ```
 
 </h2>
+
+
+
+

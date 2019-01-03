@@ -96,3 +96,53 @@ The SSD algorithm also knows how to go back from one convolution operation to an
   To train our algorithm, we need a training set that contains image with objects and those objects must have bounding boxes on them. Learning this way, the algorithms learn how to put rectangle on the object and where to put. We minimize the errors between inferred bounding boxes and ground truth to optimize our model to detect the object correctly. Unlike in CNN, we don’t only predict if there is an object in the image or not we also need to predict where in the image the object is. During training the algorithm learn to adjust the height and width of the rectangle in the object. 
 </p8>
 
+
+<h3>
+
+```diff
++ Used Libraries
+```
+
+</h3>
+
+<p9>
+ 
+We are importing the **Variable class** which will be used to convert the tensors into some Pytorch variables
+that will contain both the **tensor** and a **gradient.**
+</p9>
+
+<p10>
+  
+We're just importing **CV2** because we will be **drawing some rectangles** around the detected objects 
+based on as is the neural network with single shot multi-box detection.
+</p10>
+
+<p11>
+  
+**BaseTransform** is a class that will do the required transformations so that the **input images** 
+will be **compatible with the neural network.**
+</p11>
+
+<p12>
+  
+**VOC_CLASSES** is just a dictionary that will do the encoding of the classes. So for example 
+planes will be encoded as '1'. So that's just a very simple dictionary doing the **mapping between the 
+text fields of the classes and some integers.**
+</p12>
+
+<p13>
+  
+ssd is the library of the single shot multi-box detection model.
+**build_ssd** will be the constructor of the SSD neural network.
+</p13>
+
+<p14>
+  
+**imageio** is just the library that we'll use to **process the images of the video** and 
+**applying it to the detect function** that will implement on the images.
+So at first, I wanted to import PIL which is another library but imageio actually 
+turns out to be a much better choice in terms of lines of code.
+</p14>
+
+
+
